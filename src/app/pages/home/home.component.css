@@ -1,0 +1,13 @@
+*{
+    height: 100vh;
+    background-image: url(https://img.freepik.com/vector-gratis/maqueta-estanteria-blanca-libros-estante-biblioteca_107791-2457.jpg?w=2000);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.texto{
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+    padding-top: 7%;
+}
