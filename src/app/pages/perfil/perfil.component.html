@@ -1,0 +1,29 @@
+<div class="general">
+        <div class="derecha">
+            <div class="divFoto">
+                <img class="foto" src="https://www.dzoom.org.es/wp-content/uploads/2020/02/portada-foto-perfil-redes-sociales-consejos.jpg">
+            </div>
+            <div class="datos">
+                <label class="form-label" >Nombre: </label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="{{usuario1.nombre}}">
+                <label class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="{{usuario1.apellido}}">
+                <label class="form-label">Correo</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="{{usuario1.correo}}">
+            </div>
+        </div>
+
+
+        <div class="izquierda">
+            <h4>EDITA TUS DATOS</h4>
+            <p>Nuevo Nombre</p>
+            <input type="text" class="form-control" id="inputAddress" #input1>
+            <p>Nuevo Apellido</p>
+            <input type="text" class="form-control" id="inputAddress" #input2>
+            <p>Nuevo Correo</p>
+            <input type="text" class="form-control" id="inputAddress" #input3>
+            <p>URL</p>
+            <input type="text" class="form-control" id="inputAddress" #input4>
+            <button class="btn" type="button" (click)= enviar(input1,input2,input3,input4)>EDITAR</button>
+        </div>
+</div>

@@ -1,0 +1,50 @@
+
+.general{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    height: 480px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url(https://media.theobjective.com/app/uploads/2022/06/083727/portadaLibros.jpg);
+}
+
+.derecha{
+    width: 30%;
+    border: 2px solid rgba(255, 255, 255, 0.71);
+    padding: 2%;
+    padding-top: 4%;
+    color:white;
+    background-color: rgba(52, 46, 46, 0.646);
+    margin-left: 15%;
+    border-radius: 3%;
+
+}
+.izquierda{
+    width: 30%;
+    padding: 2%;
+    border: 2px solid rgba(255, 255, 255, 0.71);
+    background-color: rgba(52, 46, 46, 0.646);
+    border-radius: 3%;
+    text-align: center;
+    color:white;
+    margin-right:15%;
+
+}
+.foto{
+    width: 150px;
+    border-radius: 10%;
+}
+.divFoto{
+    /* border: 2px solid orange; */
+    margin-left: 30%;
+}
+.btn{
+    margin-top: 5%;
+    background-color: grey;
+    color: white;
+}
+.btn:hover{
+    color: green;
+    background-color: rgba(255, 255, 255, 0.836);
+}
