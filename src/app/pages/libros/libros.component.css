@@ -1,0 +1,21 @@
+.general{
+   display: flex;
+   align-content: space-around;
+   gap: 10px;
+   flex-wrap:wrap;
+}
+
+#form{
+    background-color: rgba(0, 128, 0, 0.404);
+    border: 2px solid green;
+    padding: 2%;
+    margin: 5%;
+}
+
+/* .colorVerde{
+    background-color: green;
+}
+
+.colorAzul{
+    background-color: blue;
+} */
