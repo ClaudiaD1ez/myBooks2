@@ -1,55 +1,35 @@
-<h3>Tus libros.</h3>
-<div class="general">
-<ng-container *ngFor="let libro of libros; let i = index" >
+<h2>TUS LIBROS</h2>
 
-    <div  class="card" style="width: 18rem;" >
-        <img src={{libro.photo}} class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">{{libro.titulo}}</h5>
-          <p class="card-text">{{libro.tipoLibro}} <br> {{libro.autor}} <br> {{libro.precio}} <br> {{libro.Id_libro | mostrarCodigo}} <br></p>
-          <a [ngClass]="i%2==0 ? 'btn-success' : 'btn-primary' " href="#" class="btn btn-primary">Comprar</a>
-        </div>
+<div class="id-input">
+    <div class="col-md-6">
+        <!-- <label for="inputEmail4" class="form-label">Id del libro</label> -->
+        <input type="number" class="form-control" id="inputEmail4" placeholder="id del libro" #id_libr>
+        <button type="button" class="btn btn-primary" (click)= mostrarLibro(id_libr)> BUSCAR </button>
     </div>
-
-</ng-container>
 </div>
 
-<div *ngIf="libros.length === 0">
+<div class="general">  
+
+    <ng-container *ngFor="let libro of mislibros; let i = index" >
+
+        <div  class="card" style="width: 18rem;" >
+            <img src={{libro.photo}} class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">{{libro.titulo}}</h5>
+            <p class="card-text">{{libro.tipoLibro}} <br> {{libro.autor}} <br> {{libro.precio}} <br> {{libro.Id_libro | mostrarCodigo}} <br></p>
+            <a [ngClass]="i%2==0 ? 'btn-success' : 'btn-primary' " href="#" class="btn btn-primary">Comprar</a>
+            <button type="button" class="btn btn-danger" (click)= borrarLibro(libro.Id_libro)> X </button>
+
+        </div>
+        </div>
+
+    </ng-container>
+</div>
+
+<div *ngIf="mislibros.length === 0">
     No hay libros en la lista.
 </div> 
 
-<div id="form">
-    <form class="row g-3">
-        <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">Id del libro</label>
-          <input type="text" class="form-control" id="inputEmail4" #input1>
-        </div>
-        <div class="col-md-6">
-          <label for="inputPassword4" class="form-label">Id del usuario</label>
-          <input type="text" class="form-control" id="inputPassword4"#input2>
-        </div>
-        <div class="col-12">
-          <label for="inputAddress" class="form-label">Titulo</label>
-          <input type="text" class="form-control" id="inputAddress" #input3>
-        </div>
-        <div class="col-12">
-          <label for="inputAddress2" class="form-label">Tipo del libro</label>
-          <input type="text" class="form-control" id="inputAddress2" #input4>
-        </div>
-        <div class="col-12">
-            <label for="inputAddress2" class="form-label">Autor</label>
-            <input type="text" class="form-control" id="inputAddress2" #input5>
-        </div>
-        <div class="col-12">
-            <label for="inputAddress2" class="form-label">Precio</label>
-            <input type="text" class="form-control" id="inputAddress2" #input6>
-        </div>
-        <div class="col-12">
-            <label for="inputAddress2" class="form-label">Foto</label>
-            <input type="text" class="form-control" id="inputAddress2" #input7>
-        </div>
-        <div class="col-12">
-          <button type="reset" class="btn btn-primary" (click)= enviar(input1,input2,input3,input4,input5,input6,input7)> AÑADIR </button>
-        </div>
-      </form>
-</div>
+
+
+

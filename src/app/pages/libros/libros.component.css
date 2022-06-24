@@ -1,21 +1,17 @@
+h2{
+    text-align: center;
+    padding: 1%;
+    color: rgb(181, 69, 69);
+  }
+
 .general{
    display: flex;
    align-content: space-around;
    gap: 10px;
    flex-wrap:wrap;
+   margin-left: 15%;
 }
 
-#form{
-    background-color: rgba(0, 128, 0, 0.404);
-    border: 2px solid green;
-    padding: 2%;
-    margin: 5%;
+.id-input{
+    margin-left:35%;
 }
-
-/* .colorVerde{
-    background-color: green;
-}
-
-.colorAzul{
-    background-color: blue;
-} */

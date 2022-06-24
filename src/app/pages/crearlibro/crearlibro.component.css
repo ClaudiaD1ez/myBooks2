@@ -1,0 +1,14 @@
+h2{
+  text-align: center;
+  padding: 1%;
+  color: rgb(181, 69, 69);
+}
+
+.form{
+  background-color: rgba(0, 128, 0, 0.404);
+  border: 2px solid green;
+  padding: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
